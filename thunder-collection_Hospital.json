@@ -1,0 +1,121 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Hospital",
+    "dateExported": "2023-03-27T05:48:28.015Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e87e5e64-ac8f-431c-8816-84492d98a723",
+            "colId": "00dc5d81-07bd-4fba-9270-393433f36059",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:5000/api/doctors/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-27T05:27:12.031Z",
+            "modified": "2023-03-27T05:28:55.200Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"doctor\",\n  \"password\":\"111111\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "32f76f70-e908-4087-8c3c-f03344cfd75b",
+            "colId": "00dc5d81-07bd-4fba-9270-393433f36059",
+            "containerId": "",
+            "name": "filter reports /Negative,/.....",
+            "url": "localhost:5000/api/reports/Travelled-Quarantine",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-27T05:28:11.645Z",
+            "modified": "2023-03-27T05:43:40.548Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDIxMjVmOGQwMDZhMzk4NTNhOWFlNDgiLCJpYXQiOjE2Nzk4OTQ5MzZ9.rCLIHKBRZlsOqa4g88PMeojypAKNmYPqBQWRsD9rN_8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e59aae4e-0c9f-4e75-9a3c-c0c32e313cca",
+            "colId": "00dc5d81-07bd-4fba-9270-393433f36059",
+            "containerId": "",
+            "name": "create new patient",
+            "url": "localhost:5000/api/patients/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-27T05:32:18.583Z",
+            "modified": "2023-03-27T05:41:41.987Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"roul\",\n  \"phone\":\"6936968965\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDIxMjVmOGQwMDZhMzk4NTNhOWFlNDgiLCJpYXQiOjE2Nzk4OTQ5MzZ9.rCLIHKBRZlsOqa4g88PMeojypAKNmYPqBQWRsD9rN_8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0f00e18a-bb7c-41ca-a482-302aefae274f",
+            "colId": "00dc5d81-07bd-4fba-9270-393433f36059",
+            "containerId": "",
+            "name": "create report",
+            "url": "localhost:5000/api/reports/64212c95116f63e3f6c2f20f/create_report",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-03-27T05:39:02.479Z",
+            "modified": "2023-03-27T05:42:08.945Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"Travelled-Quarantine\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDIxMjVmOGQwMDZhMzk4NTNhOWFlNDgiLCJpYXQiOjE2Nzk4OTQ5MzZ9.rCLIHKBRZlsOqa4g88PMeojypAKNmYPqBQWRsD9rN_8"
+            },
+            "tests": []
+        },
+        {
+            "_id": "bd95532b-be58-49bf-88f1-e1d3c4d8b3b4",
+            "colId": "00dc5d81-07bd-4fba-9270-393433f36059",
+            "containerId": "",
+            "name": "patient all report",
+            "url": "localhost:5000/api/patients/64212c95116f63e3f6c2f20f/all_reports",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-03-27T05:44:07.080Z",
+            "modified": "2023-03-27T05:47:25.495Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
