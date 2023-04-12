@@ -20,11 +20,11 @@ I've used MongoDb Atlas for the database. So, you need to create a cluster in Mo
 You can use your local database by adding the connection string in the .env file.
 
 #  API Endpoints
-1- GET /api/doctors/register -           Register a doctor
-2- POST /api/doctors/login -             Login a doctor
+1- GET /api/doctors/register -           Register a doctor  (name,username,password)
+2- POST /api/doctors/login -             Login a doctor  (username,password)
 3- GET /api/doctors/logout -             Logout a doctor
-4- POST /api/patients/register -         Register a patient
-5- GET /api/patients/:id/all_reports -   Get all reports of a specific patient
+4- POST /api/patients/register -         Register a patient(name,phone(primary_key))
+5- GET /api/patients/:id/all_reports -   Get all reports of a specific patient(patient_id)
 6- POST /api/reports/:id/create_report-  Create a report of a patient
 7- GET /api/reports/:status  -           GET all reports related to specific Status['Negative','Travelled-Quarantine', 'Symptoms-Quarantine', 'Positive-Admit']
 
